@@ -62,10 +62,7 @@ header {
 .info {
   display: flex;
   flex-direction: column;
-}
-
-.info .metadata {
-  margin: 10px;
+  margin: var(--side-padding);
 }
 
 .info .metadata .hashtags {
@@ -129,17 +126,34 @@ button:focus {
 .info .channel {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
+  /* padding: var(--side-padding); */
+  border-top: 1px solid var(--gray-light-color);
+  border-bottom: 1px solid var(--gray-light-color);
 }
 
 .info .channel .userInfo {
   display: flex;
+  align-items: center;
 }
 .info .channel .userInfo img {
   width: auto;
   height: auto;
   max-width: 50px;
   max-height: 50px;
+  border-radius: 50px;
+}
+
+.info .channel .userInfo .info {
+  margin-left: var(--side-padding);
+}
+
+.info .channel .userInfo .info .name {
+  font-size: var(--font-medium);
+}
+
+.info .channel .userInfo .info .subscribers {
+  font-size: var(--font-small);
+  color: var(--gray-dark-color);
 }
 
 .info .channel .subscribe {
@@ -147,4 +161,39 @@ button:focus {
   align-items: center;
 }
 .info .channel .subscribe button {
+  text-transform: uppercase;
+  font-size: var(--font-small);
+  color: var(--red-color);
+}
+
+.UpNext {
+  display: flex;
+  margin: var(--side-padding);
+}
+
+.UpNext ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.UpNext .item {
+  display: flex;
+  align-items: center;
+}
+
+.UpNext .item .image {
+  flex: 1 1 40%;
+}
+
+.UpNext .item img {
+  width: 100%;
+}
+
+.UpNext .item .info {
+  flex: 1 1 35%;
+}
+
+.UpNext .item .moreBtn {
+  flex: 1 1 5%;
 }
