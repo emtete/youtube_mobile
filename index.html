@@ -3,7 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./script.js" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Youtube</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+      <video src="" controls autoplay></video>
+    </section>
+
+    <!-- Video Info -->
+    <section class="info">
+      <!-- Meta Data -->
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>#hello</li>
+          <li>#homepage</li>
+          <li>#react</li>
+        </ul>
+        <div class="titleAndBtn">
+          <span class="title">
+            클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) |
+            프론트엔드 개발자 입문편: HTML, CSS, Javascript
+          </span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
+        <div class="createdDate">1M views 1month ago</div>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <ul class="actionsBtn">
+          <li>
+            <button style="color: blue;">
+              <i class="fas fa-thumbs-up"></i>1k
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i>1k</button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i>Share</button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i>Save</button>
+          </li>
+          <li>
+            <button><i class="fab fa-font-awesome-flag"></i>Report</button>
+          </li>
+        </ul>
+      </div>
+      <div class="channel">
+        <div class="userInfo">
+          <img src="image/최종호 증-2.jpg" alt="" class="abata" />
+          <div class="info">
+            <div class="name">프론트엔드 개발자 최종호</div>
+            <div class="subscribers">구독자 500명</div>
+          </div>
+        </div>
+        <div class="subscribe">
+          <button>subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video UpNext -->
+    <section class="UpNext"></section>
+  </body>
 </html>
